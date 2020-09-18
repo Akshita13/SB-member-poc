@@ -2,7 +2,7 @@ import { Steps } from 'antd';
 import { connect } from 'dva';
 import GeneralSettingsForm from './forms/GeneralSettingForm';
 import SupportContentForm from './forms/SupportContentForm';
-import style from '../style.less'
+import AddOns from './forms/AddOns';
 const StepsComp = (props) => {
     const { Step } = Steps;
     const [currentStep, setcurrentStep] = React.useState(1);
@@ -37,6 +37,9 @@ const StepsComp = (props) => {
                 </div>
                 <div style={{display: currentStep==2 ? 'block' : 'none' }}>
                     <SupportContentForm props={props} />
+                </div>
+                <div style={{display: currentStep==3 ? 'block' : 'none' }}>
+                    <AddOns props={props} />
                 </div>
             </div>
         </>
