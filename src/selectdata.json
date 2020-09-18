@@ -1,0 +1,12 @@
+{
+    "data": [
+        {
+            "checkout_label":"Fritolay",
+            "id":{"$oid":"1"}
+        },
+        {
+            "checkout_label":"Client Shopify",
+            "id":{"$oid":"2"}
+        }
+    ]
+}
