@@ -1,0 +1,19 @@
+{
+  "formData": [
+    {
+      "member_portal_checkout_id": "2",
+      "member_portal_name": "dfgfdg",
+      "member_portal_shipment_daycount": 0,
+      "member_portal_login_url_slug": "fdgdfg",
+      "member_portal_support_email": "sdfsddf@fgsd.com",
+      "member_portal_ad_products": [],
+      "notifications": [],
+      "memberPortalActions": {
+        "change_delivery_address": true,
+        "ad_manage": false,
+        "user_notification": false
+      },
+      "id": 1
+    }
+  ]
+}

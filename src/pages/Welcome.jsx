@@ -1,10 +1,9 @@
 import React from 'react';
-import Member from './member/index'
+import Member from './member/index';
 import { connect } from 'dva';
 import { useEffect } from 'react';
 
-const Welcome = (props) => {
-
+const Welcome = props => {
   const { dispatch } = props;
 
   useEffect(() => {
@@ -15,11 +14,16 @@ const Welcome = (props) => {
     }
   }, [1]);
   return (
-
-    <Member selectionData={props.selectionData}/>
-  )
-}
+    <Member
+      selectionData={props.selectionData}
+      selectedItems={[]}
+      mainProps={props}
+      formValues={props.formValues}
+    />
+  );
+};
 
 export default connect(({ user }) => ({
-  selectionData: user.selectionData
-}))(Welcome)
+  selectionData: user.selectionData,
+  formValues: user.formValues,
+}))(Welcome);

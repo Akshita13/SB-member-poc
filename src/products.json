@@ -1,0 +1,70 @@
+{
+  "data": [
+    {
+      "id": {
+        "$oid": "5f638c9cbc27a42b30046aea"
+      },
+      "reference_product_id": 32,
+      "reference_product_type": "configurable",
+      "sku": "Doritos",
+      "product_offer_id": "13",
+      "product_billing_model_id": 2,
+      "product_name": "Doritos",
+      "price": 12,
+      "product_discount_price": 0,
+      "refrence_store_id": "5f5a2bc08e070b4d0735e532",
+      "product_description": "<p>Doritos description</p>",
+      "product_images": [
+        "https://assets.sticky.io/images/originals/2020-09-21-09-00-00/DQLK4IDw1y2QTStRjkRvgc3qbC6x4ZnycMtemlL2.jpeg"
+      ],
+      "product_img_url": "https://assets.sticky.io/images/originals/2020-09-21-09-00-00/DQLK4IDw1y2QTStRjkRvgc3qbC6x4ZnycMtemlL2.jpeg",
+      "product_createdDtm": "21 Sep, 2020 01:31 PM",
+      "product_updatedDtm": "2020-09-24 12:01:21",
+      "product_updatedBy": "5e85aab87709625590052732",
+      "product_createdBy": "5e85aab87709625590052732",
+      "product_updatedBy_User": "ayan@sketchbrains.com",
+      "subscription_name": "One time purchase",
+      "subscription_status": false,
+      "sticky_io_api_key": "",
+      "product_type": 4,
+      "product_trial": false,
+      "product_crm_id": 1493,
+      "product_straight_sale": false,
+      "has_variants": 1,
+      "price_from": 12
+    },
+    {
+      "id": {
+        "$oid": "5f5b20caeb37953f267e2382"
+      },
+      "reference_product_id": 25,
+      "reference_product_type": "configurable",
+      "sku": "Cheetos",
+      "product_offer_id": "9",
+      "product_billing_model_id": "5",
+      "product_name": "Cheetos",
+      "price": 9,
+      "product_discount_price": 0,
+      "refrence_store_id": "5f5a2bc08e070b4d0735e532",
+      "product_description": "",
+      "product_images": [
+        "https://assets.sticky.io/images/originals/2020-09-21-09-00-00/DyN0J9JM0PwxLSNCvQAI4mmy6Ssjx0BrWbljp90B.jpeg"
+      ],
+      "product_img_url": "https://assets.sticky.io/images/originals/2020-09-21-09-00-00/DyN0J9JM0PwxLSNCvQAI4mmy6Ssjx0BrWbljp90B.jpeg",
+      "product_createdDtm": "21 Sep, 2020 01:31 PM",
+      "product_updatedDtm": "2020-09-22 13:20:38",
+      "product_updatedBy": "5e85aab87709625590052732",
+      "product_createdBy": "5e85aab87709625590052732",
+      "product_updatedBy_User": "ayan@sketchbrains.com",
+      "subscription_name": "Bills every 15 days",
+      "subscription_status": true,
+      "sticky_io_api_key": "",
+      "product_type": 4,
+      "product_trial": false,
+      "product_crm_id": 1486,
+      "product_straight_sale": false,
+      "has_variants": 1,
+      "price_from": 9
+    }
+  ]
+}
