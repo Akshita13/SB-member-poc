@@ -3,6 +3,7 @@ import { connect } from 'dva';
 import GeneralSettingsForm from './forms/GeneralSettingForm';
 import SupportContentForm from './forms/SupportContentForm';
 import AddOns from './forms/AddOns/AddOns';
+import UiAndTheme from './forms/UiAndTheme'
 const StepsComp = props => {
   const { Step } = Steps;
   const [currentStep, setcurrentStep] = React.useState(1);
@@ -69,6 +70,9 @@ const StepsComp = props => {
             changePermission={props.changePermission}
             permissions={props.permissions}
           />
+        </div>
+        <div style={{ display: currentStep == 4 ? 'block' : 'none' }}>
+          <UiAndTheme props={props} />
         </div>
       </div>
     </>

@@ -15,7 +15,6 @@ import {
 } from 'antd';
 import { useState } from 'react';
 import { useEffect } from 'react';
-import styles from '../../../style.less';
 import { connect } from 'dva';
 
 const AdMangeModal = props => {

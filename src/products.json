@@ -66,5 +66,31 @@
       "has_variants": 1,
       "price_from": 9
     }
+  ],
+  "getPalettes": [
+    {
+      "_id": {
+        "$oid": "5f216fc469bcde1080191192"
+      },
+      "c1": "#1890FF",
+      "c2": "#FFFFFF",
+      "c3": "#FFFFFF",
+      "c4": "#000000d9",
+      "c5": "#1890FF",
+      "id": "5f216fc469bcde1080191192",
+      "label": "Default palette"
+    },
+    {
+      "_id": {
+        "$oid":"5f216fc469bcde1080191193"
+      },
+      "c1": "#581845",
+      "c2": "#900C3F",
+      "c3": "#C70039",
+      "c4": "#FF5733",
+      "c5": "#FFC300",
+      "id": "5f216fc469bcde1080191193",
+      "label": "Palette"
+    }
   ]
 }

@@ -9,11 +9,30 @@ import {
   notificationDel,
   submitMembership,
   getMembership,
+  getPaletteColors
 } from '@/services/user';
+
+const setPalette = (colors, index) => {
+  return {
+    "label": colors.label + ' #' + `${index + 1}`,
+    "primaryColor": colors.c1,
+    "secondaryColor": colors.c1,
+    "processingColor": colors.c1,
+    "layoutHeaderBg": colors.c2,
+    "layoutSiderBg": colors.c2,
+    "pageHeaderBg": colors.c3,
+    "textColor": colors.c4,
+    "textSecondaryColor": colors.c4,
+    "headingColor": colors.c4,
+    "btnPrimaryColor": colors.c5
+  }
+}
+
 const UserModel = {
   namespace: 'user',
   state: {
     currentUser: {},
+    palettes:[]
   },
   effects: {
     *fetch(_, { call, put }) {
@@ -92,6 +111,18 @@ const UserModel = {
         });
       }
     },
+    *getPaletteColors({ payload }, { call, put }) {
+      try {
+        const response = yield call(getPaletteColors, payload);
+        yield put({
+          type: 'setPaletteColors',
+          payload: response,
+        });
+      }
+      catch (error) {
+        console.error(error);
+      }
+    }
   },
   reducers: {
     saveCurrentUser(state, action) {
@@ -123,6 +154,11 @@ const UserModel = {
           unreadCount: action.payload.unreadCount,
         },
       };
+    },
+    setPaletteColors(state, action) {
+      let palettesConfig = [];
+      action.payload.map((color, index) => { palettesConfig.push(setPalette(color, index)) });
+      return { ...state, palettes: palettesConfig };
     },
   },
 };

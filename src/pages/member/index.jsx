@@ -8,7 +8,9 @@ const Member = props => {
   const {
     form: { getFieldDecorator },
     selectedItems,
+    formValues
   } = props;
+  console.log(formValues,"formValues");
   const [selectedProducts, setselectedProducts] = useState([]);
   const [notifications, setnotifications] = useState([]);
   const [memberPortalActions, setmemberPortalActions] = useState(defaultPermissions);
@@ -42,7 +44,7 @@ const Member = props => {
           formData.member_portal_ad_products = selectedProducts;
           formData.notifications = notifications;
           formData.memberPortalActions = memberPortalActions;
-          delete formData.notification;
+          delete formData.user_notification;
           delete formData.ad_manage;
           delete formData.change_delivery_address;
           if (dispatch) {

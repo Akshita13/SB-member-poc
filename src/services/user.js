@@ -52,3 +52,8 @@ export async function getMembership() {
     method: 'GET',
   });
 }
+export async function getPaletteColors() {
+  return request('http://localhost:4300/getPalettes', {
+    method: 'GET',
+  });
+}

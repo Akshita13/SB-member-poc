@@ -1,11 +1,57 @@
 {
   "formData": [
     {
-      "member_portal_checkout_id": "2",
+      "member_portal_checkout_id": "1",
       "member_portal_name": "dfgfdg",
       "member_portal_shipment_daycount": 0,
       "member_portal_login_url_slug": "fdgdfg",
       "member_portal_support_email": "sdfsddf@fgsd.com",
+      "member_portal_support_phone": "1111111111",
+      "notification": false,
+      "member_portal_logo": {
+        "file": {
+          "uid": "rc-upload-1602074853572-24",
+          "lastModified": 1601529073327,
+          "lastModifiedDate": "2020-10-01T05:11:13.327Z",
+          "name": "subscription.PNG",
+          "size": 45001,
+          "type": "image/png",
+          "percent": 100,
+          "originFileObj": {
+            "uid": "rc-upload-1602074853572-24"
+          },
+          "status": "done",
+          "response": {
+            "name": "xxx.png",
+            "status": "done",
+            "url": "https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png",
+            "thumbUrl": "https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png"
+          },
+          "xhr": {}
+        },
+        "fileList": [
+          {
+            "uid": "rc-upload-1602074853572-24",
+            "lastModified": 1601529073327,
+            "lastModifiedDate": "2020-10-01T05:11:13.327Z",
+            "name": "subscription.PNG",
+            "size": 45001,
+            "type": "image/png",
+            "percent": 100,
+            "originFileObj": {
+              "uid": "rc-upload-1602074853572-24"
+            },
+            "status": "done",
+            "response": {
+              "name": "xxx.png",
+              "status": "done",
+              "url": "https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png",
+              "thumbUrl": "https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png"
+            },
+            "xhr": {}
+          }
+        ]
+      },
       "member_portal_ad_products": [],
       "notifications": [],
       "memberPortalActions": {
