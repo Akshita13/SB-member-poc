@@ -4,6 +4,8 @@ import styles from '../../style.less';
 import { connect } from 'dva';
 import { colorPickers, palettes, defaultPermissions } from '../../constant';
 import {SketchPicker} from 'react-color'
+
+
 const UiAndTheme = (props) => {
     const {
         form: { getFieldDecorator }
@@ -44,15 +46,21 @@ const UiAndTheme = (props) => {
    const handleSwatchClick = (stateName) => {
         debugger
         // this.setState({ [stateName]: !this.state[stateName] })
-        setStateName(!stateName)
-      }
-    
-    const handlePickerClose = (stateName) => {
-        debugger
-        // this.setState({ [stateName]: !this.state[stateName] })
-        setStateName(!stateName)
+        // setStateName(!stateName)
+    }
 
-      };
+//    const handleSwatchClick = (stateName) => {
+//         debugger
+//         // this.setState({ [stateName]: !this.state[stateName] })
+//         setStateName(!stateName)
+//       }
+    
+//     const handlePickerClose = (stateName) => {
+//         debugger
+//         // this.setState({ [stateName]: !this.state[stateName] })
+//         setStateName(!stateName)
+
+//       };
     
 
     const handlePaletteChange=(e)=>{
@@ -132,12 +140,12 @@ const UiAndTheme = (props) => {
                             }
                             )(
                               <div>
-                                <div className={styles.swatch} onClick={() => handleSwatchClick(picker.swatchState)}>
+                                <div className={styles.swatch} onClick={() =>[picker.swatchClickHandler](picker.swatchState)}>
                                   <div className={styles.color}
                                     style={{ background: (member_portal_theme_colors && member_portal_theme_colors.hasOwnProperty(picker.themeKey)) ? member_portal_theme_colors[picker.themeKey] : palettes[0][picker.themeKey] }} /></div>
                                 {[picker.swatchState] ?
                                   <div appendTo="body" className={styles.popover}>
-                                    <div className={styles.cover} onClick={() => handlePickerClose(picker.swatchState)} />
+                                    <div className={styles.cover} onClick={() => [picker.pickerCloseHandler](picker.swatchState)} />
                                     <SketchPicker className={styles.picker} color={(member_portal_theme_colors && member_portal_theme_colors.hasOwnProperty(picker.themeKey)) ? member_portal_theme_colors[picker.themeKey] : palettes[0][picker.themeKey]} onChange={[picker.colorChangeHandler]} />
                                   </div> :
                                   null}
