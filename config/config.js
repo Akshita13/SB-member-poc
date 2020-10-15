@@ -101,6 +101,10 @@ export default {
               redirect: '/member',
             },
             {
+              path: '/preview/new',
+              component: './member/ThemePreview',
+            },
+            {
               path: '/member',
               name: 'member',
               icon: 'smile',
